@@ -1,0 +1,119 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Ensure the body takes full height */
+}
+
+/* Container for the entire order form */
+.order-form-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  max-height: 90vh; /* Use viewport height for maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Title for the form */
+.order-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form group for each label and input field */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Adjust width for better responsiveness */
+}
+
+/* Styling for labels */
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+  font-size: 16px;
+}
+
+/* Styling for text input fields */
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+/* Hover and focus effects for input fields */
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group textarea:focus {
+  border-color: #ff7043;
+  outline: none;
+}
+
+/* Styling for the textarea */
+.form-group textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Price label */
+.form-group label[for="price"] {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Submit button styles */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7043;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.submit-button:hover {
+  background-color: #ff5722;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .order-form-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .order-form-container h2 {
+    font-size: 22px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="tel"],
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+  }
+}

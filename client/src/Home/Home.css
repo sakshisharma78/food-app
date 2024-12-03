@@ -1,0 +1,59 @@
+/* Home.css */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Ensures the video stays in the background */
+    object-fit: cover; /* Ensures the video covers the entire background without distortion */
+}
+
+.home-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    z-index: 1; /* Ensures the content is on top of the video */
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-overlay h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.content-overlay button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content-overlay button:hover {
+    background-color: #0056b3;
+}

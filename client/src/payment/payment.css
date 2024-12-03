@@ -1,0 +1,42 @@
+/* order.css */
+.order-form-container {
+ /* your existing styles */
+  }
+  
+  .form-group {
+ margin-bottom: 15px;
+  }
+  
+  .submit-button {
+ background-color: #28a745;
+ color: white;
+ padding: 10px;
+ border: none;
+ cursor: pointer;
+  }
+  
+  .submit-button:hover {
+ background-color: #218838;
+  }
+  
+  /* paymentGateway.css */
+  .payment-gateway-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+  }
+  
+  .pay-button {
+ background-color: #007bff;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+  }
+  
+  .pay-button:hover {
+ background-color: #0056b3;
+  }
+  

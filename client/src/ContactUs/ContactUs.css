@@ -1,0 +1,70 @@
+.contactus-wrapper {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.contactus-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.7; /* Adjust opacity as needed */
+}
+
+.contactus-container {
+    position: relative;
+    z-index: 2;
+    padding: 35px;
+    max-width: 600px;
+    margin: 75px auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6); /* Less transparent background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contactus-container h1 {
+    margin-bottom: 16px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contactus-container form {
+    display: flex;
+    margin-bottom: 42px;
+    margin: 56px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px;
+    border-radius: 5px;
+}
+
+.contactus-container input,
+.contactus-container textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: content-box;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
+}
+
+.contactus-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactus-container button:hover {
+    background-color: #0056b3;
+}

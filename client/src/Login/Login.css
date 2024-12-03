@@ -1,0 +1,60 @@
+/* Login.css */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Ensures the video stays in the background */
+    object-fit: cover; /* Ensures the video covers the entire background without distortion */
+}
+
+.login-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-content h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.login-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px -9px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.login-content button {
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-content button:hover {
+    background-color: #0056b3;
+}
